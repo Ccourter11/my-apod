@@ -1,38 +1,67 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
 .App {
   text-align: center;
+  background-color: black;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 58px;
+  margin: 25px 25px 25px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  color: #adb7bd;
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  text-indent: 30px;
+  margin: 25px 25px 25px 25px;
+  text-align: justify;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.date {
   color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.datepicker {
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.player-wrapper {
+  position: relative;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img {
+  max-width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .date {
+    font-size: 16px;
   }
 }
