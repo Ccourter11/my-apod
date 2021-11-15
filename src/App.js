@@ -8,7 +8,7 @@ function App() {
     base: "https://api.nasa.gov/planetary/apod",
   };
 
-  var today = new Date();
+  let today = new Date();
 
   const [date, setDate] = useState(today);
   const [photo, setPhoto] = useState("");
